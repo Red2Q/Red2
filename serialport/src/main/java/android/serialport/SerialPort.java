@@ -67,6 +67,18 @@ public final class SerialPort {
      *
      * @param device 串口设备文件
      * @param baudrate 波特率
+     * @throws SecurityException
+     * @throws IOException
+     */
+    public SerialPort(File device, int baudrate)
+            throws SecurityException, IOException {
+        this(device, baudrate, 8, 0, 1, 0);
+    }
+    /**
+     * 串口
+     *
+     * @param device 串口设备文件
+     * @param baudrate 波特率
      * @param dataBits 数据位，默认8
      * @param parity 奇偶校验位，默认0（无校验）
      * @param stopBits 停止位，默认1

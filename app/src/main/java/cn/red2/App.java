@@ -2,6 +2,8 @@ package cn.red2;
 import android.content.SharedPreferences;
 import android.serialport.SerialPort;
 import android.serialport.SerialPortFinder;
+
+import java.io.File;
 import java.io.IOException;
 import java.security.InvalidParameterException;
 
@@ -26,7 +28,7 @@ public class App extends android.app.Application {
             }
 
             /* Open the serial port */
-            //mSerialPort = new SerialPort(new File(path), baudrate, 0);
+//            mSerialPort = new SerialPort(new File(path), baudrate);
 
             SerialPort serialPort = SerialPort //
                     .newBuilder(path, baudrate) // 串口地址地址，波特率
