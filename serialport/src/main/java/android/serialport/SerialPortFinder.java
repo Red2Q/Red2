@@ -17,6 +17,7 @@
 package android.serialport;
 
 import android.util.Log;
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
