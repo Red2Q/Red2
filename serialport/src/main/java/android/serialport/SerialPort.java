@@ -26,7 +26,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class SerialPort {
-
+    //test
     private static final String TAG = "SerialPort";
 
     private static final String DEFAULT_SU_PATH = "/system/bin/su";
